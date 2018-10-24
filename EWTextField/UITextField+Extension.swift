@@ -61,7 +61,7 @@ extension String {
     func stringCut(end: Int) -> String{
         if !(end <= count) { return self }
         let sInde = index(startIndex, offsetBy: end)
-        return substring(to: sInde)
+        return String(self[..<sInde])
     }
 }
 
