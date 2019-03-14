@@ -1,0 +1,9 @@
+disabled_rules: # 禁用指定的规则
+  - colon
+  - comma
+  - control_statement
+  - line_length
+opt_in_rules: # 启用指定的规则
+  - empty_count
+  - missing_docs
+  # 可以通过执行如下指令来查找所有可用的规则:

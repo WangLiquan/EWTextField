@@ -30,7 +30,7 @@ class CRTextField: UITextField {
     /// - Parameters:
     ///   - frame: frame
     ///   - isSecure: 是否是密码格式
-    init(frame:CGRect,isSecure:Bool){
+    init(frame:CGRect,isSecure:Bool) {
         super.init(frame:frame)
         self.isSecureTextEntry = isSecure
         drawMyView()
@@ -40,8 +40,8 @@ class CRTextField: UITextField {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private func drawMyView()  {
+
+    private func drawMyView() {
         self.addSubview(label)
         self.layer.addSublayer(bottomLine)
         if self.isSecureTextEntry {
@@ -57,19 +57,19 @@ class CRTextField: UITextField {
         sender.isSelected = !sender.isSelected
     }
     /// 将placeholder上移方法,点击空的textfield时调用
-    public func changeLabel(){
+    public func changeLabel() {
         UIView.animate(withDuration: 0.4) {
             self.label.frame = CGRect(x: 0, y: -20, width: 100, height: 20)
             self.label.font = UIFont.systemFont(ofSize: 10)
             self.label.textColor = UIColor.x4FB0FF
         }
     }
-    public func changeLineHidden(){
+    public func changeLineHidden() {
         self.bottomLine.isHidden = !self.bottomLine.isHidden
     }
 
     /// placeholder下移方法,当文字清空时调用
-    public func disChangeLabel(){
+    public func disChangeLabel() {
         UIView.animate(withDuration: 0.4) {
             self.label.frame = CGRect(x: 0, y: 0, width: 100, height: self.frame.size.height)
             self.label.font = UIFont.systemFont(ofSize: 18)
@@ -94,7 +94,7 @@ class CRTextField: UITextField {
 }
 /// 密码形式的右侧明密文转换按钮
 class PassowrdSwitch : UIButton {
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         config()

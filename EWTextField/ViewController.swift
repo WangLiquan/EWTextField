@@ -45,26 +45,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-extension ViewController: UITextFieldDelegate{
+extension ViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        if textField is CRTextField {
-            let tf = textField as! CRTextField
-            if tf.text == ""{
-                tf.changeLabel()
-            }
-            tf.changeLineHidden()
+        guard let textField = textField as? CRTextField else {
+            return true
         }
+        if textField.text == ""{
+            textField.changeLabel()
+        }
+        textField.changeLineHidden()
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField is CRTextField {
-            let tf = textField as! CRTextField
-            if tf.text == "" {
-                tf.disChangeLabel()
-            }
-            tf.changeLineHidden()
+        guard let textField = textField as? CRTextField else {
+            return
         }
+        if textField.text == "" {
+            textField.disChangeLabel()
+        }
+        textField.changeLineHidden()
     }
 }

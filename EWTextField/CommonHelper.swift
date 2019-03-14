@@ -19,25 +19,24 @@ struct ScreenInfo {
         return UIScreen.main.bounds.equalTo(CGRect(x: 0, y: 0, width: 375, height: 812))
     }
     static private func navBarHeight() -> CGFloat {
-        return isIphoneX() ? 88 : 64;
+        return isIphoneX() ? 88 : 64
     }
 }
 //便捷的类方法
 extension UIColor {
-    class func colorWithRGBA(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) -> UIColor {
-        return UIColor(red: r/255, green: g/255, blue: b/255, alpha: a)
+    class func colorWithRGBA(red:CGFloat,green:CGFloat,blue:CGFloat,alpha:CGFloat) -> UIColor {
+        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
     }
 }
+// swiftlint:disable identifier_name
+extension UIColor {
 
-extension UIColor{
+    @nonobjc static let x666666 = UIColor.colorWithRGBA(red: 102, green: 102, blue: 102, alpha: 1)
 
-    @nonobjc static let x666666 = UIColor.colorWithRGBA(r: 102, g: 102, b: 102, a: 1)
+    @nonobjc static let x333333 = UIColor.colorWithRGBA(red: 51, green: 51, blue: 51, alpha: 1)
 
-    @nonobjc static let x333333 = UIColor.colorWithRGBA(r: 51, g: 51, b: 51, a: 1)
+    @nonobjc static let x4FB0FF = UIColor.colorWithRGBA(red: 79, green: 176, blue: 255, alpha: 1)
 
-    @nonobjc static let x4FB0FF = UIColor.colorWithRGBA(r: 79, g: 176, b: 255, a: 1)
-
-    @nonobjc static let x333333_alpha40 = UIColor.colorWithRGBA(r: 51, g: 51, b: 51, a: 0.4)
-
+    @nonobjc static let x333333_alpha40 = UIColor.colorWithRGBA(red: 51, green: 51, blue: 51, alpha: 0.4)
 
 }
