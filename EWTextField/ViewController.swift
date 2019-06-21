@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let phoneTF : CRTextField = {
-        let textField = CRTextField(frame: CGRect(x: 24, y: 150, width: ScreenInfo.Width - 48, height: 35), isSecure: false)
+    let phoneTF : EWTextField = {
+        let textField = EWTextField(frame: CGRect(x: 24, y: 150, width: ScreenInfo.Width - 48, height: 35), isSecure: false)
         textField.label.text = "手机号"
         textField.font = UIFont.systemFont(ofSize: 18)
         textField.clearButtonMode = .always
@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         textField.keyboardType = .phonePad
         return textField
     }()
-    let passwordTF : CRTextField = {
-        let textField = CRTextField(frame: CGRect(x: 24, y: 210, width: ScreenInfo.Width - 48, height: 35), isSecure: true)
+    let passwordTF : EWTextField = {
+        let textField = EWTextField(frame: CGRect(x: 24, y: 210, width: ScreenInfo.Width - 48, height: 35), isSecure: true)
         textField.label.text = "密码"
         textField.maxTextNumber = 15
         textField.font = UIFont.systemFont(ofSize: 18)
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
 }
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        guard let textField = textField as? CRTextField else {
+        guard let textField = textField as? EWTextField else {
             return true
         }
         if textField.text == ""{
@@ -58,7 +58,7 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        guard let textField = textField as? CRTextField else {
+        guard let textField = textField as? EWTextField else {
             return
         }
         if textField.text == "" {

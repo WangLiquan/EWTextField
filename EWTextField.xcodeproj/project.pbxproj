@@ -14,7 +14,7 @@
 		7972EF962138DF44009CDF8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7972EF942138DF44009CDF8B /* LaunchScreen.storyboard */; };
 		7972EFA12138DF44009CDF8B /* EWTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972EFA02138DF44009CDF8B /* EWTextFieldTests.swift */; };
 		7972EFAC2138DF44009CDF8B /* EWTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972EFAB2138DF44009CDF8B /* EWTextFieldUITests.swift */; };
-		7972EFBA2138DF91009CDF8B /* CRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972EFB92138DF91009CDF8B /* CRTextField.swift */; };
+		7972EFBA2138DF91009CDF8B /* EWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972EFB92138DF91009CDF8B /* EWTextField.swift */; };
 		7972EFBC2138DFE2009CDF8B /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972EFBB2138DFE2009CDF8B /* UITextField+Extension.swift */; };
 		7972EFBE2138DFF7009CDF8B /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972EFBD2138DFF7009CDF8B /* CommonHelper.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +50,7 @@
 		7972EFA72138DF44009CDF8B /* EWTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EWTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7972EFAB2138DF44009CDF8B /* EWTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWTextFieldUITests.swift; sourceTree = "<group>"; };
 		7972EFAD2138DF44009CDF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7972EFB92138DF91009CDF8B /* CRTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRTextField.swift; sourceTree = "<group>"; };
+		7972EFB92138DF91009CDF8B /* EWTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWTextField.swift; sourceTree = "<group>"; };
 		7972EFBB2138DFE2009CDF8B /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		7972EFBD2138DFF7009CDF8B /* CommonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +106,7 @@
 				7972EF8B2138DF40009CDF8B /* AppDelegate.swift */,
 				7972EFBD2138DFF7009CDF8B /* CommonHelper.swift */,
 				7972EF8D2138DF40009CDF8B /* ViewController.swift */,
-				7972EFB92138DF91009CDF8B /* CRTextField.swift */,
+				7972EFB92138DF91009CDF8B /* EWTextField.swift */,
 				7972EFBB2138DFE2009CDF8B /* UITextField+Extension.swift */,
 				7972EF8F2138DF40009CDF8B /* Main.storyboard */,
 				7972EF922138DF44009CDF8B /* Assets.xcassets */,
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7972EFBA2138DF91009CDF8B /* CRTextField.swift in Sources */,
+				7972EFBA2138DF91009CDF8B /* EWTextField.swift in Sources */,
 				7972EFBE2138DFF7009CDF8B /* CommonHelper.swift in Sources */,
 				7972EFBC2138DFE2009CDF8B /* UITextField+Extension.swift in Sources */,
 				7972EF8E2138DF40009CDF8B /* ViewController.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CRTextField: UITextField {
+class EWTextField: UITextField {
 
     private let bottomLine : CALayer = {
         let line = CALayer()
